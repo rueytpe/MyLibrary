@@ -40,7 +40,8 @@ public class AllBooksActivity extends AppCompatActivity {
         // TODO Fix it at:2:25:48
 
         // ActionBar.setDefaultDisplayHomeAsUpEnabled can only be called from within the same library group prefix (referenced groupId=androidx.appcompat with prefix androidx from groupId=My Library)
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         adapter = new BooksRecViewAdapter(this, "allBooks");
         booksRecView = findViewById(R.id.booksRecView);
